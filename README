@@ -1,0 +1,17 @@
+Pami Star pour la composition du robot pour la coupe de france de robotique.
+
+
+
+Un peu de documentation sur le fonctionnement du code.
+
+Le code source se trouve dans le dossier src-> main.cpp
+
+Selon le règlement, le but du pami est de suivre une ligne monter sur une estrade et s'arrêter au sommet de cette estrade avec une projection du pami dans le vide. 
+
+Pour cela le robot fonctionne actuellement avec:
+    Une STM32 L432KC (La configuration pour coder avec cette carte est réalisé avec platformeio si changement de carte modifier plateformeio.ini)
+    Deux servo moteur en continue ( sont mis en service grâce à la commande microseocnde(1500) pour les initialiser et en suite tourne grace a write(180,0) et sont mis à l'arrêt par la valeur 90)
+    Un capteur de couleur pour suivre la ligne
+    Un capteur à ultra song pour faire de l'évitement d'obstacle
+
+
